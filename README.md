@@ -1,7 +1,7 @@
 # GeodesicPSIM
-GeodesicPSIM: Predicting the Quality of Static Mesh with Texture Map via Geodesic Patch Similarity
+[GeodesicPSIM: Predicting the Quality of Static Mesh with Texture Map via Geodesic Patch Similarity][link]
 
-(https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=87nXDYAAAAAJ&citation_for_view=87nXDYAAAAAJ:MXK_kJrjxJIC)
+[link]:https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=87nXDYAAAAAJ&citation_for_view=87nXDYAAAAAJ:MXK_kJrjxJIC
 
 chinoyang@tencent.com
 
