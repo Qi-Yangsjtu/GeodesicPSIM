@@ -36,9 +36,9 @@ Make sure OpenCV and OpenMp can work normally on your computer.
 
 4. Open ".../GeodesicPSIM/build/GeodesicPSIM.sln" solution with MSVC 2022, select 'Release' mode, then select Gps as the starting project.
 
-### If you do not want to compile the source code by yourself, we also provide a binary in C++ binary folder
+#### If you do not want to compile the source code by yourself, we also provide a binary in C++ binary folder
 
-A python script is provided to help you use the binary.
+A Python script is provided to help you use the binary.
 
 ## Matlab implementation
 
@@ -46,4 +46,6 @@ A python script is provided to help you use the binary.
   
 2. Run the script for fast testing
    
-3. If success, set your own N (N=500 in our publication)
+3. If successful, set your own N (N=500 in our publication)
+
+### Note: the results between C++ and Matlab implementations might have some minor differences
