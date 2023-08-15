@@ -25,9 +25,8 @@ Note: the number of reference (or distorted) .obj/ply files and .png/jpg files s
 
 This Python Script calculates the objective scores of the mesh sequence. 
 Test:
-Test data are provided in the testSample\ folder. There are two test meshes available for testing:  longdress_fr1051.obj and wiz_boots_C0-L5_deq_tri.obj. By using the Python script, the following csv file is produced:
- 
-Figure 1. Results
+Test data are provided in the testSample\ folder. There is a pair of mesh available for testing: wiz_boots_C0-L5_deq_tri.obj and wiz_boots_dec0.10_qp7_qt6_cqlevel_63.obj. By using the Python script, the following csv file is produced:
+./testSample/score/result_GeodesicPSIM.csv
 
 Patch color smoothness, patch discrete mean curvature, patch pixel color average, and patch pixel color variance are four features used to calculate the final objective scores, i.e., GeodesicPSIM score. For more technology details, refer to our publication:
 Yang, Q., Jung, J., Xu, X., & Liu, S. (2023). GeodesicPSIM: Predicting the Quality of Static Mesh with Texture Map via Geodesic Patch Similarity. arXiv preprint arXiv:2308.04928.
