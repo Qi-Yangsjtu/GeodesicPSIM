@@ -3,7 +3,7 @@ A binary is provided:
 •	GeodesicPSIM.exe, for Windows (to be launched with administrator rights).
 The texture file can be a PNG or a JPEG image, and the mesh file should be an OBJ mesh.
 A Python Script is provided to test mesh sample. An example of the command line is the following:
-python MediaLabMetric.py \
+python GeodesicPSIMMetric.py \
 --ref_obj_path        ./testSample/reference/
 --ref_img_path        ./testSample/reference/ 
 --dis_obj_path        ./testSample/distorted/ 
