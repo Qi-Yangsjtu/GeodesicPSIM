@@ -3,6 +3,12 @@
 
 [link]:https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=87nXDYAAAAAJ&citation_for_view=87nXDYAAAAAJ:MXK_kJrjxJIC
 
+Contributor:
+
+Chino Yang (Qi Yang)
+
+Tencent Media Lab
+
 chinoyang@tencent.com
 
 ## C++ implementation 
