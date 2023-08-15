@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
 	std::cout << "GeodesicPSIM score is: " << score << std::endl;
 
 	std::cout << "Using Time: " << (end - start) / CLOCKS_PER_SEC << std::endl;
-	system("pause");
+	//system("pause");
 	return 0;
 }
 
