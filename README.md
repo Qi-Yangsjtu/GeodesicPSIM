@@ -34,7 +34,7 @@ Make sure OpenCV and OpenMp can work normally on your computer.
 
    3.2 Choose 'Visual Studio 17 2022 Win64' as the compiler version
 
-   3.3 Where is the source code = ".../GeodesicPSIM/"
+   3.3 Where is the source code = ".../GeodesicPSIM/GeodesicPSIM_Code/"
 
    3.4 Where to build the binaries = ".../GeodesicPSIM/build"
 
