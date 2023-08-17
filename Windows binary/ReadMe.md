@@ -62,6 +62,11 @@ To ensure obtain correct results, we suggest that you pay attention to the follo
 
 1.	The mesh files consist of three parts, including .obj, .png (or other image formats), and .mtl files. To test objective quality, .obj and .png files are required.
    
-2.	For .obj file, please make sure that the raw data meets the formatting requirements of the obj file. For example: the vt (UV) information should be normalized to 0-1 according to the resolution of the texture map. Please make sure the mesh sample can be normally rendered via MeshLab by directly dragging the obj file into MeshLab before sharing.
+2.	For .obj file, please make sure that the raw data meets the formatting requirements of the obj file. For example: the vt (UV) information should be normalized to 0-1 according to the resolution of the texture map.
+
+3.	Please make sure the mesh sample can be normally rendered via MeshLab by directly dragging the obj file into MeshLab before using the software.
+
+4. The mesh must be triangle mesh.	
+
 
 
