@@ -55,9 +55,18 @@ Make sure OpenCV and OpenMp can work normally on your computer.
 
 4. Open ".../GeodesicPSIM/build/GeodesicPSIM.sln" solution with MSVC 2022, select 'Release' mode, then select GeodesicPSIM as the starting project.
 
-#### If you do not want to compile the source code by yourself, we also provide a binary in C++ binary folder
+5. To run the software:
 
-A Python script is provided to help you use the binary.
+   GeodesicPSIM.exe ReferenceMesh(obj) ReferenceMeshTextureMap DistortedMesh(obj) DistortedMeshTextureMap --N < Number of keypoint, default is 500 > --result_file < file to save results, default is result.csv >
+
+6. Check the results.
+
+   Patch color smoothness, patch discrete mean curvature, patch pixel color average, and patch pixel color variance are four features used to calculate the final objective scores, i.e., GeodesicPSIM score.
+
+
+#### If you do not want to compile the source code by yourself, we also provide a binary in the Windows binary folder
+
+A Python script, GeodesicPSIMMetric.py, and a ReaMe.md is provided to help you use the binary.
 
 ## Matlab implementation
 
