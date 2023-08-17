@@ -59,9 +59,22 @@ Make sure OpenCV and OpenMp can work normally on your computer.
 
    GeodesicPSIM.exe ReferenceMesh(obj) ReferenceMeshTextureMap DistortedMesh(obj) DistortedMeshTextureMap --N < Number of keypoint, default is 500 > --result_file < file to save results, default is result.csv >
 
-6. Check the results.
+   A pair of meshes is provided with '/Windows binary/testSample.zip' for testing.
+   
+7. Check the results.
 
    Patch color smoothness, patch discrete mean curvature, patch pixel color average, and patch pixel color variance are four features used to calculate the final objective scores, i.e., GeodesicPSIM score.
+
+#### If you cannot obtain the results with your own meshes, please check your mesh .obj file and compare them with the testing samples. 
+
+1.	The mesh files consist of three parts, including .obj, .png (or other image formats), and .mtl files. To test objective quality, .obj and .png files are required.
+   
+2.	For .obj file, please make sure that the raw data meets the formatting requirements of the obj file. For example: the vt (UV) information should be normalized to 0-1 according to the resolution of the texture map.
+  
+3.	Please make sure the mesh sample can be normally rendered via MeshLab by directly dragging the obj file into MeshLab before using the software. Otherwise, it might cause some unexpected errors.
+
+4. The mesh must be triangle mesh.
+
 
 
 #### If you do not want to compile the source code by yourself, we also provide a binary in the Windows binary folder
