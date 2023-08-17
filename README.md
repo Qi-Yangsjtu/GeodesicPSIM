@@ -42,7 +42,7 @@ Make sure OpenCV and OpenMp can work normally on your computer.
 
    3.6 Click "Generate"
 
-4. Open ".../GeodesicPSIM/build/GeodesicPSIM.sln" solution with MSVC 2022, select 'Release' mode, then select Gps as the starting project.
+4. Open ".../GeodesicPSIM/build/GeodesicPSIM.sln" solution with MSVC 2022, select 'Release' mode, then select GeodesicPSIM as the starting project.
 
 #### If you do not want to compile the source code by yourself, we also provide a binary in C++ binary folder
 
