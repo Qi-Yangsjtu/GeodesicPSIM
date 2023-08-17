@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
 	std::cout << "********************************************************************" << std::endl;
 	///*
 	if (argc < 3) {
-		std::cerr << "Usage: " <<std::endl << "Gps.exe ReferenceMesh(obj) ReferenceMeshTextureMap DistortedMesh(obj) DistortedMeshTextureMap" << std::endl;
+		std::cerr << "Usage: " <<std::endl << "GeodesicPSIM.exe ReferenceMesh(obj) ReferenceMeshTextureMap DistortedMesh(obj) DistortedMeshTextureMap" << std::endl;
 		std::cerr << "(Options) (--N Number of keypoints) (Options) (--result_file CSV file to save results) "<<std::endl;
 		return -1;
 	}
