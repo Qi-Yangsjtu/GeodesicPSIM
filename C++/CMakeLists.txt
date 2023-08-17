@@ -16,12 +16,12 @@ find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(Gps ${DIR_SRCS})
+add_executable(GeodesicPSIM ${DIR_SRCS})
 
-target_link_libraries(Gps ${OpenCV_LIBS})
+target_link_libraries(GeodesicPSIM ${OpenCV_LIBS})
 
 #Config OpenMP
 
 find_package(OpenMP REQUIRED)
 
-target_link_libraries(Gps OpenMP::OpenMP_CXX)
+target_link_libraries(GeodesicPSIM OpenMP::OpenMP_CXX)
