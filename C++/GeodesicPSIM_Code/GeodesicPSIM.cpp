@@ -6,19 +6,19 @@ double GeodesicPSIM(int N, std::string dir_reference, std::string dir_distortion
 	Extra ref_extra, dis_extra;
 	double start, end;
 
-	std::cout << "Loding reference Mesh ..."<<std::endl;
+	std::cout << "Loading reference Mesh ..."<<std::endl;
 	start = clock();
 	read_obj(dir_reference, ref_mesh, ref_extra);
 	end = clock();
-	std::cout << "Loding reference Mesh Time: " << (end - start) / CLOCKS_PER_SEC << std::endl;
+	std::cout << "Loading reference Mesh Time: " << (end - start) / CLOCKS_PER_SEC << std::endl;
 
-	std::cout << "Loding distorted Mesh ..." << std::endl;;
+	std::cout << "Loading distorted Mesh ..." << std::endl;;
 	start = clock();
 
 	read_obj(dir_distortion, dis_mesh, dis_extra);
 
 	end = clock();
-	std::cout << "Loding distorted Mesh Time: " << (end - start) / CLOCKS_PER_SEC << std::endl;
+	std::cout << "Loading distorted Mesh Time: " << (end - start) / CLOCKS_PER_SEC << std::endl;
 
 	cv::Mat ref_pic = cv::imread(dir_reference_png, 1);
 	cv::Mat dis_pic = cv::imread(dir_distortion_png, 1);
