@@ -17,6 +17,17 @@ Dependencies: OpenCV OpenMp
 
 Make sure OpenCV and OpenMp can work normally on your computer.
 
+1. [OpenCV](https://opencv.org/releases/), version 4.8.0 is recommended.
+
+   Add openCV to the environment path, For example:
+
+   D:\opencv\build\x64\vc16\bin
+
+   D:\opencv\build\bin
+
+2. If you have installed VS, OpenMp is already supported. Otherwise, please check [tdm-gcc](https://jmeubank.github.io/tdm-gcc/).
+
+
 ### Windows10 installation
 
 1. Unzip eigen-3.4.0
