@@ -180,7 +180,7 @@ void read_obj(std::string filename, Mesh& mesh, Extra& extra) {
 		}
 	}
 
-	else if (textures_row_num && !normals_row_num && vector_mesh.faces[0].size() == 6) {
+	else if (textures_row_num && vector_mesh.faces[0].size() == 6) {
 
 		for (int i = 0; i < faces_row_num; ++i) {
 			mesh.faces.row(i) << vector_mesh.faces[i][0], vector_mesh.faces[i][2], vector_mesh.faces[i][4];
