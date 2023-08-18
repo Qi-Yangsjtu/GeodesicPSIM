@@ -156,7 +156,7 @@ Clean_Mesh mesh_clean(Mesh mesh, Extra extra, Image3 texture) {
 	ref_vertexcolor.block(0, vertex_r.rows() * 1, vertex_r.cols(), vertex_r.rows()) = vertex_g.transpose();
 	ref_vertexcolor.block(0, vertex_r.rows() * 2, vertex_r.cols(), vertex_r.rows()) = vertex_b.transpose();
 
-	Eigen::MatrixXi vertexcolor(ref_vertexcolor.rows(), ref_vertexcolor.cols());
+	Eigen::MatrixXi vertexcolor(mesh.vertices.rows(), mesh.vertices.cols());
 
 	for (int i = 0; i < unique_face_vertex_ordered.size(); ++i) {
 		vertexcolor.row(unique_face_vertex_ordered[i]) = ref_vertexcolor.row(i);
