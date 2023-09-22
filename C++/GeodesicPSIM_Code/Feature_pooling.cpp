@@ -100,15 +100,15 @@ double Feature_pooling(std::vector< SubFeature> feature, std::string result_file
 	std::vector<double>  average_pcs(size);
 	std::vector<double> average_dmc(size), average_face_lm(size), average_face_var(size), average_face_c1m(size), average_face_c1var(size), average_face_c2m(size), average_face_c2var(size);
 	
-	double pcs;
+	double pcs = 0.0;
 
-	double dmc;
-	double face_lm;
-	double face_var;
-	double face_c1m;
-	double face_c1var;
-	double face_c2m ;
-	double face_c2var;
+	double dmc = 0.0;
+	double face_lm = 0.0;
+	double face_var = 0.0;
+	double face_c1m = 0.0;
+	double face_c1var = 0.0;
+	double face_c2m = 0.0;
+	double face_c2var = 0.0;
 	int count = 0;
 	int count_dmc = 0;
 	for (int k = 0; k < feature.size(); ++k) {
