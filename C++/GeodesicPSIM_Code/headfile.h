@@ -19,7 +19,7 @@
 #include <sstream>
 
 
-#include "Common.h"
+#include "common.h"
 
 #include "read_obj.h"
 #include "mesh_clean.h"
