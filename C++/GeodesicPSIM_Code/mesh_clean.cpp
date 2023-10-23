@@ -215,6 +215,21 @@ Clean_Mesh mesh_clean(Mesh mesh, Extra extra, Image3 texture) {
 		for (int i = 0; i < faces.rows(); ++i) {
 			if ( (faces(i, 0) == faces(i, 1)) || (faces(i, 0) == faces(i, 2)) || (faces(i, 1) == faces(i, 2)) ) {
 				bad_face_index.push_back(i);
+				continue;
+			}
+			// calculate face size to remove face size = 0: three points in a line
+			v1 = vertices_new2.row(faces(i, 0));
+			v2 = vertices_new2.row(faces(i, 1));
+			v3 = vertices_new2.row(faces(i, 2));
+
+			Eigen::Vector3d vec_a = v1 - v2;
+			Eigen::Vector3d vec_b = v3 - v2;
+
+			Eigen::Vector3d cross_product = vec_a.cross(vec_b);
+			float face_size = cross_product.norm();
+			if (face_size == 0) {
+				bad_face_index.push_back(i);
+				continue;
 			}
 		}
 
