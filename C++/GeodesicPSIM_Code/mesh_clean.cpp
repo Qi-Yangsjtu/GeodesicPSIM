@@ -212,6 +212,7 @@ Clean_Mesh mesh_clean(Mesh mesh, Extra extra, Image3 texture) {
 		}
 
 		std::vector<int> bad_face_index;
+		Eigen::VectorXd v1(3), v2(3), v3(3);
 		for (int i = 0; i < faces.rows(); ++i) {
 			if ( (faces(i, 0) == faces(i, 1)) || (faces(i, 0) == faces(i, 2)) || (faces(i, 1) == faces(i, 2)) ) {
 				bad_face_index.push_back(i);
